@@ -1,9 +1,7 @@
 package com.example;
-
 import java.util.List;
 
 public class Lion {
-
     boolean hasMane;
 
     public Lion(String sex) throws Exception {
@@ -16,7 +14,10 @@ public class Lion {
         }
     }
 
-    Feline feline = new Feline();
+    private Feline feline;
+    public Lion(Feline feline){
+        this.feline = feline;
+    }
 
     public int getKittens() {
         return feline.getKittens();
