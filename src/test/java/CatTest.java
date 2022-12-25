@@ -20,7 +20,7 @@ public class CatTest {
 
     @Test
     public void testGetSound(){
-        Feline feline = new Feline(felineFakeInCat);
+        Feline feline = new Feline();
         Cat cat = new Cat(feline);
         Assert.assertEquals("Мяу", cat.getSound());
     }
